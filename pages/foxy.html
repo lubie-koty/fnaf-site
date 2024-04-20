@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
+    <script src="../scripts.js"></script>
+  </head>
+  <body>
+    <div class="background layered-graphic"></div>
+    <div class="main-container">
+        <section class="main-content">
+            <div class="card">
+                <button class="btn btn-creepy" onclick="changeImage()">
+                    <span class="material-symbols-outlined">
+                    autorenew
+                    </span>
+                </button>
+                <div class="card-body">
+                    <h2>Foxy the Pirate</h2>
+                    <p>Foxy is a discontinued animatronic pirate fox entertainer. He resides at his own separate stage in the pizzeria. He was the pirate fox entertainer when the first Freddy Fazbear's Pizza was opened in 1983 (although, it's unknown if he was discontinued).</p>
+                    <p>Foxy is a large, animatronic fox with crimson, tattered fur. He has yellow eyes, red eyebrows, and three strands of hair from the top of his head. He has a hook for his right hand and his left hand has been worn down to the endoskeleton. He also bears an eye patch that is folded over his right eye, although he is usually seen with it above his eye rather than covering it. Unlike the stereotypical fox, Foxy doesn't have a tail.</p>
+                    <p>As the title of Foxy's attraction would imply, Foxy's personality is that of a stereotypical pirate, often speaking in pirate slang, all with a pirate accent.</p>
+                </div>
+                <div class="card-footer">
+                    <figure class="quote">
+                        <blockquote>
+                            "Never underestimate the cunning of a pirate. Or a fox for that matter!"
+                        </blockquote>
+                        <figcaption>
+                            &mdash; Foxy, <cite>Ultimate Custom Night</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>     
+        </section>
+        <section class="side-content"">
+            <div class="side-nav">
+                <a class="btn" href="/">
+                    Main Page
+                </a>
+                <a class="btn" href="/pages/freddy.html">
+                    Freddy
+                </a>
+                <a class="btn" href="/pages/bonnie.html">
+                    Bonnie
+                </a>
+                <a class="btn" href="/pages/chica.html">
+                    Chica
+                </a>
+                <a class="btn" href="/pages/foxy.html">
+                    Foxy
+                </a>
+            </div>
+            <div class="side-image">
+                <img src="../assets/foxy.webp" class="image" id="animatronicImage" onclick="changeImage()"></img>
+            </div>
+        </section>
+    </div>
+  </body>
+</html>

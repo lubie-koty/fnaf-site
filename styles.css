@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+  background-color: #140021;
+  color: white;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 75vw 24vw;
+  grid-template-rows: auto;
+}
+
+.main-content {
+  padding: 2rem;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.side-nav {
+  flex: 0 1 content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-image {
+  flex: 0 1 auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: inherit;
+  height: inherit;
+  object-fit: scale-down;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.background.layered-graphic {
+  background-image: url("./assets/layered-steps-haikei.svg");
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  font-size: 2.5rem;
+
+  background-image: linear-gradient(
+    90deg,
+    rgba(138, 0, 172, 1) 10%,
+    rgba(191, 61, 213, 1) 40%,
+    rgba(195, 0, 200, 1) 65%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 60%;
+  height: 4rem;
+  padding: 1rem 1.6rem;
+  margin-bottom: 0.25rem;
+  transition: all 0.5s;
+}
+
+.btn.btn-creepy {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn:hover {
+  box-shadow: rgba(138, 0, 172, 1) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 60vw;
+  height: 80vh;
+  padding: 35px;
+  border: 1px solid rgba(12, 12, 12, 0.25);
+  border-radius: 20px;
+  background-color: rgba(49, 49, 49, 0.7);
+  box-shadow: 0 0 10px 1px rgba(219, 0, 190, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.card .card-body {
+  font-size: 2.25em;
+}
+
+.card .card-body h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+.card .card-footer {
+  width: 50%;
+  margin-top: auto;
+
+  border: 0.1rem solid #fff;
+  border-radius: 2rem;
+
+  box-sizing: border-box;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+
+.quote {
+  font-size: 1.25em;
+}
